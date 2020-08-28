@@ -3,7 +3,7 @@ import os
 
 here = os.path.dirname(os.path.abspath(__file__))
 try:
-    description = file(os.path.join(here, 'README.md')).read()
+    description = open(os.path.join(here, 'README.md')).read()
 except (OSError, IOError):
     description = ''
 
